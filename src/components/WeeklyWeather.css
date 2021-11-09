@@ -1,0 +1,8 @@
+.topContainer{
+    display: flex;
+    flex-direction: row;
+  }
+
+  div{
+    margin: 0 auto;
+  }
