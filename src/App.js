@@ -28,7 +28,7 @@ function App() {
     query: "(min-device-width: 1201px )",
   });
 
-  const[location,setLocation]=useState({value: 2459115, label: 'New York'})
+  const [location,setLocation]=useState({value: 2459115, label: 'New York'})
   const[data,setData]=useState()
   const[days, setDays]=useState([])
   const getLocation=(location)=>{
