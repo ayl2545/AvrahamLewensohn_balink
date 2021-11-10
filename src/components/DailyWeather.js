@@ -1,5 +1,4 @@
-import React,{useState, useEffect} from 'react'
-import getIcon from '../DAL/getIcon';
+import React,{useState} from 'react'
 import WeatherCard from './WeatherCard';
 
 
