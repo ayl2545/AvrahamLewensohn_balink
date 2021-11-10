@@ -34,6 +34,7 @@ function App() {
   const getLocation=(location)=>{
       setLocation(location)
   }
+  let time, sun_rise, sun_set
   const getFromApi= async()=>{
     let rsp= await getData(location.value)
     setData(rsp.data)
@@ -41,6 +42,9 @@ function App() {
 }
 useEffect(() => {
     getFromApi()
+    //time= data.time.split('T')[1]
+    //sun_rise=data.sun_rise.split('T')[1]
+    //sun_set=data.sun_set.split('T')[1]
 }, [location])
  
   return (
@@ -53,7 +57,9 @@ useEffect(() => {
       <h1>Weather Forecast</h1>
       <div align ="right" >
       <div><Selector getLocation={getLocation}/></div>
-      
+      {/*time}
+      {sun_rise}
+      {sun_set*/}
       </div>
       <Routers days={days} location={location}/>
     </div>

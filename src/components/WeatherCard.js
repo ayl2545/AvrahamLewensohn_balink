@@ -20,10 +20,10 @@ function WeatherCard(props) {
     }
     return (
         
-        <div>
+        <div className="card">
             
             <h5><Link to='/DailyWeather/' onClick={dayWheathr}>{dateFormat}</Link></h5>
-            <img src={getIcon(data.weather_state_abbr)} alt=''/>
+            <img  src={getIcon(data.weather_state_abbr)} alt=''/>
             {data.weather_state_name}
             <h5>max:{Math.round(data.max_temp)}℃</h5>
             <h5>min:{Math.round(data.min_temp)}℃</h5>
