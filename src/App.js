@@ -6,7 +6,6 @@ import Selector from './components/Selector';
 import {useState, useEffect} from 'react'
 import getData from './DAL/getData';
 
-
 function App() {
   const isMobileDevice = useMediaQuery({
     query: "(min-device-width: 480px)",
@@ -34,7 +33,7 @@ function App() {
   const getLocation=(location)=>{
       setLocation(location)
   }
-  let time, sun_rise, sun_set
+  
   const getFromApi= async()=>{
     let rsp= await getData(location.value)
     setData(rsp.data)
