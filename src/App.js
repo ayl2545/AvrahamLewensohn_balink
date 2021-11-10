@@ -2,7 +2,7 @@
 import './App.css';
 import Routers from './components/Routers';
 import { useMediaQuery } from 'react-responsive'
-import Selector from './utils/Selector';
+import Selector from './components/Selector';
 import {useState, useEffect} from 'react'
 import getData from './DAL/getData';
 
